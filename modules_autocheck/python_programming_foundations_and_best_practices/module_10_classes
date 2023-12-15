@@ -1,40 +1,11 @@
-class Contacts:
-    current_id = 1
+l = [1,3,4,23,3].remove
 
-    def __init__(self):
-        self.contacts = []
+i = 23
+if i in l:
+    print(i)
 
-    def list_contacts(self):
-        return self.contacts
-
-    def add_contacts(self, name, phone, email, favorite):
-        self.contacts.append(
-            {
-                "id": Contacts.current_id,
-                "name": name,
-                "phone": phone,
-                "email": email,
-                "favorite": favorite,
-            }
-        )
-        Contacts.current_id += 1
-
-    def get_contact_by_id(self, id):
-        for i in self.contacts:
-            if i['id'] == id:
-                return (i)
-        return None
-
-    def remove_contacts(self, id):
-        for i in self.contacts:
-            if i['id'] == id:
-                self.contacts.remove(i)
+list
 
 
-s = Contacts()
-s.add_contacts("Wylie Pope","(692) 802-2949","est@utquamvel.net",True)
-s.add_contacts("Wylie Pop2e","(692) 802-2949","est@utquamvel.net",True)
-s.remove_contacts(1)
-#print(s.get_contact_by_id(1))
-print(s.list_contacts())
-#print(s.list_contacts())
+
+print(type(l))
